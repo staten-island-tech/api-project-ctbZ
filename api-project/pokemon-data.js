@@ -1,6 +1,7 @@
 const search_term = document.getElementById('search_q')
 const search_btn = document.getElementById('search-btn')
-
+const transfer_btn = document.getElementById('btn-transfer')
+const pokemon_card = document.getElementById('pokemon-details')
 
 // api https://pokeapi.co/docs/v2#pokemon
 const getPokemonData = async term => {
@@ -34,3 +35,5 @@ const getPokemonData = async term => {
 }
 
 search_btn.addEventListener('click', () => getPokemonData(search_term.value))
+transfer_btn.addEventListener('click', () => console.log(success))
+// document.getElementById("pokemon-card").remove
