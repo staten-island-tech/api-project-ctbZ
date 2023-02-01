@@ -33,3 +33,7 @@ const getPokemonData = async term => {
     document.getElementById('update_candy').innerHTML = Math.floor((Math.random() * 200) + 1)
 
 }
+
+search_btn.addEventListener('click', () => getPokemonData(search_term.value))
+transfer_btn.addEventListener('click', () => console.log(success))
+// document.getElementById("pokemon-card").remove
